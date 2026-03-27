@@ -11,12 +11,12 @@ def print_choces():
     print("----------------------------")
 
 while True:
-    user_choice = input("Rock, Paper or scissors (R/P/S) / Q to quit: ")
+    user_choice = input("Rock, Paper or scissors (R/P/S) / Q to quit: ").lower()
     computer_choice = random.choice(options)
 
-    if user_choice.lower() == "q":
+    if user_choice == "q":
         break
-    elif user_choice.lower() not in options:
+    elif user_choice not in options:
         print("Enter a valid option (R, P, or S)")
         print("_____________________________________")
         print()
