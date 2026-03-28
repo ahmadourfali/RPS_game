@@ -1,8 +1,8 @@
 """Rock, Paper, Scissors game """
 import random
-options = ("r", "p", "s")
 wining_comp = (("r", "s"), ("p", "r"), ("s", "p"))
 emojis = {"r":"🪨", "p":"📰", "s":"✂️"}
+options = tuple(emojis.keys())
 
 def print_choces():
     print("----------------------------")
